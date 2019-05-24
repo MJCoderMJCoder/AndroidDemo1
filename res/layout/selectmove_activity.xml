@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_main_bg" >
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="17dp"
+        android:src="@drawable/regist_upper" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:text="请选择锻炼的部位"
+        android:textColor="@color/orange"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/startTrain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buy"
+        android:text="开始训练"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <GridView
+        android:id="@+id/gridMove"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/startTrain"
+        android:layout_below="@id/title"
+        android:layout_margin="10dp"
+        android:numColumns="2"
+        android:scrollbars="none" >
+    </GridView>
+
+</RelativeLayout>

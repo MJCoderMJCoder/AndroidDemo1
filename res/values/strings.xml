@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="countDown">3 跳过</string>
+    <string name="tourist">游客模式</string>
+    <string name="login_register">登录 / 注册</string>
+    <string name="buy">购买智能哑铃</string>
+    <string name="app_name">新和健身</string>
+    <string name="evaluate">评估：您属于正常体型，但身体各部位肌肉力量不足，心肺功能较差。建议您保持生活作息习惯，其次还有计划的进行健身来达到塑性的效果。</string>
+    <string name="disclaimer">    By accessing or using this site,you agree to abide by the terms and conditions set forth below.If you do not agree to be bound by these terms and conditions, please do not use thsi site.\n    Health-Insurance-Overseas.com provides this website as a service.While the information contained within the site is periodically updated,no guarantee is given that the information provided in this website is correct,complete,and/or up-to-date.</string>
+
+    <item name="Tag_Account" type="id"></item>
+    <item name="Tag_String" type="id"></item>
+
+</resources>

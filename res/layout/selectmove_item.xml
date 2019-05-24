@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="3dp" >
+
+    <RelativeLayout
+        android:id="@+id/imgMove"
+        android:layout_width="190dp"
+        android:layout_height="150dp"
+        android:background="@drawable/picture01" >
+
+        <ImageView
+            android:id="@+id/selected"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:src="@drawable/icon_btn_select"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtMove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.8"
+            android:background="@color/grayLite"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="肱二头肌"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+</RelativeLayout>

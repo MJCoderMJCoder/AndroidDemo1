@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/info_bg" >
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:src="@drawable/regist_upper" />
+
+    <TextView
+        android:id="@+id/titleExercise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Do you often exercise?"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupOften"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleExercise"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/Never"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/able_radio"
+            android:checked="true"
+            android:gravity="center"
+            android:text="Never" />
+
+        <RadioButton
+            android:id="@+id/Occasionally"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/able_radio"
+            android:gravity="center"
+            android:text="Occasionally" />
+
+        <RadioButton
+            android:id="@+id/Often"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/able_radio"
+            android:gravity="center"
+            android:text="Often" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/titleGoals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroupOften"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Your fitness goals?"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupFat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleGoals"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/Add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/able_radio"
+            android:checked="true"
+            android:gravity="center"
+            android:text="Add muscle" />
+
+        <RadioButton
+            android:id="@+id/Reduced"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/able_radio"
+            android:gravity="center"
+            android:text="Reduced fat" />
+
+        <RadioButton
+            android:id="@+id/Shaping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/able_radio"
+            android:gravity="center"
+            android:text="Shaping" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/confirmE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroupFat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/next_personinfo"
+        android:padding="10dp"
+        android:text="Confirm"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

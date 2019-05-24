@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/info_bg" >
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:src="@drawable/regist_upper" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/back"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/regist_logo" />
+
+    <TextView
+        android:id="@+id/titleD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Heath Disclaimer"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleD"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:text="@string/disclaimer"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="ACCEPT"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

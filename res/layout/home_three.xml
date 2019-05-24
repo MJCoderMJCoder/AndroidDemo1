@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp" >
+
+    <RelativeLayout
+        android:id="@+id/headRL"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/border_head_portrait"
+        android:gravity="center"
+        android:padding="2dp" >
+
+        <com.lzf.customview.CircleImageView
+            android:id="@+id/headThree"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:src="@drawable/icon_head_portrait" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/headRL"
+        android:gravity="center"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="昵称："
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/headRL"
+        android:layout_toRightOf="@id/nick"
+        android:background="@null"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="用户433"
+        android:textColor="@color/orange"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/firstD"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/username"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/firstD"
+        android:gravity="center"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="身高："
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/heightNext"
+        android:layout_width="22dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/firstD"
+        android:padding="5dp"
+        android:src="@drawable/regist_next" />
+
+    <TextView
+        android:id="@+id/heightThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstD"
+        android:layout_toLeftOf="@id/heightNext"
+        android:layout_toRightOf="@id/height"
+        android:padding="10dp"
+        android:text="170"
+        android:textColor="@color/orange"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/secondD"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/height"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/secondD"
+        android:gravity="center"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="体重："
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/weightNext"
+        android:layout_width="22dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/secondD"
+        android:padding="5dp"
+        android:src="@drawable/regist_next" />
+
+    <TextView
+        android:id="@+id/weightThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secondD"
+        android:layout_toLeftOf="@id/weightNext"
+        android:layout_toRightOf="@id/weight"
+        android:padding="10dp"
+        android:text="70"
+        android:textColor="@color/orange"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/thirdD"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/weight"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/thirdD"
+        android:gravity="center"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="生日："
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/birthdayNext"
+        android:layout_width="22dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/thirdD"
+        android:padding="5dp"
+        android:src="@drawable/regist_next" />
+
+    <TextView
+        android:id="@+id/birthdayThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thirdD"
+        android:layout_toLeftOf="@id/birthdayNext"
+        android:layout_toRightOf="@id/birthday"
+        android:padding="10dp"
+        android:text="1992-09-09"
+        android:textColor="@color/orange"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/fourthD"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/birthday"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fourthD"
+        android:gravity="center"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="密码："
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/passwordE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/fourthD"
+        android:layout_toRightOf="@id/nick"
+        android:background="@null"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/orange"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/fifthD"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/password"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/confirmPW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fifthD"
+        android:gravity="center"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="再次输入密码："
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/confirmPWE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/fifthD"
+        android:layout_toRightOf="@id/confirmPW"
+        android:background="@null"
+        android:hint="再次输入"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/orange"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/sixthD"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/confirmPW"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sixthD"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/save"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="注销"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>
